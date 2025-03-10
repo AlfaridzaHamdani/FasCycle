@@ -1,0 +1,80 @@
+.sidebar {
+  font-family: "inter", sans-serif;
+  width: 20%;
+
+  .profilePict {
+    width: 100%;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 200px;
+    }
+
+    div {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      background-color: #292d32;
+      height: 40px;
+      width: 40px;
+      padding: 8px;
+      border-radius: 25px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fit;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 1rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .active {
+      a {
+        width: 100%;
+        background-color: #292d32;
+        color: #fff;
+      }
+    }
+
+    li {
+      a {
+        cursor: pointer;
+        padding: 8px 12px;
+        font-weight: 300;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgba(41, 45, 50, 0.7);
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: fit;
+      }
+
+      &:hover {
+        a {
+          font-weight: 600;
+        }
+      }
+
+      &:nth-last-of-type(1) {
+        a {
+          color: #f64c4f;
+        }
+      }
+    }
+  }
+}

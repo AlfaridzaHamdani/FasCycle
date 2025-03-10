@@ -1,0 +1,72 @@
+.orderCard {
+  border: #292d32 1px solid;
+  border-radius: 8px;
+  padding: 24px;
+
+  .top {
+    color: rgba(41, 45, 50, 0.64);
+    font-size: 14px;
+
+    img {
+      background-color: red;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .item {
+    margin-top: 12px;
+    display: flex;
+    gap: 1rem;
+
+    img {
+      height: 120px;
+      width: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #292d32;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .price {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #292d32;
+      }
+    }
+  }
+
+  hr {
+    margin: 24px 0;
+  }
+
+  .subtotal {
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #292d32;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.articleSection {
+  font-family: "inter", sans-serif;
+  overflow: hidden;
+  background-color: #292d32;
+  padding: 10rem 0;
+
+  .container {
+    padding: 1rem;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+}

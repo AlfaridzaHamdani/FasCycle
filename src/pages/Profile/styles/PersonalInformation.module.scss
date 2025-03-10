@@ -1,0 +1,46 @@
+.profile {
+  padding: 150px 10rem 80px 10rem;
+  font-family: "inter", sans-serif;
+  display: flex;
+  gap: 2rem;
+
+  .right {
+    width: 80%;
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .gender {
+      display: flex;
+      gap: 2rem;
+      div {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+
+    .input {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      button {
+        align-self: flex-end;
+        width: fit-content;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background-color: #292d32;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #1e2023;
+        }
+      }
+    }
+  }
+}

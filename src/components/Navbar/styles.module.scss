@@ -1,0 +1,477 @@
+a {
+  text-decoration: none;
+  color: #292d32;
+}
+
+li {
+  a {
+    color: #fff;
+  }
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  padding: 8px 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+
+  .brandName {
+    h1 {
+      font-family: "Tinos", serif;
+      font-weight: 400;
+      font-style: normal;
+      mix-blend-mode: luminosity;
+    }
+  }
+
+  .navLinks {
+    background-color: #292d32;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px 4px 4px;
+    border-radius: 100px;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+
+      li {
+        font-family: "inter", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+
+    .searchBar {
+      background-color: #fff;
+      display: flex;
+      border-radius: 50px;
+      padding: 4px;
+      width: 300px;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 1rem;
+
+      input {
+        border: none;
+        padding: 8px;
+        border-radius: 100px;
+
+        &::placeholder {
+          color: rgba(41, 45, 50, 0.4);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      img {
+        background-color: #0ca49d;
+        padding: 12px;
+        border-radius: 100px;
+        height: calc(70px - 24px);
+        width: calc(70px - 24px);
+      }
+    }
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    gap: 12px;
+
+    a {
+      background-color: #0ca49d;
+      width: 48px;
+      height: 48px;
+      border-radius: 100px;
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+    }
+
+    div:nth-of-type(2) {
+      background-color: #0ca49d;
+      padding: 16px 24px;
+      border-radius: 100px;
+      margin-right: 8px;
+      color: #fff;
+    }
+  }
+}
+
+.hamburgerNavbar {
+  z-index: 100;
+  display: none;
+  padding: 8px 1vw;
+  justify-content: space-between;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+  .wrapper:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 32px;
+  }
+
+  .wrapper:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .humbergerIcon {
+    label {
+      display: flex;
+      flex-direction: column;
+      width: 35px;
+      cursor: pointer;
+
+      span {
+        background: #292d32;
+        border-radius: 10px;
+        height: 5px;
+        margin: 4px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      }
+
+      span:nth-of-type(1) {
+        width: 50%;
+      }
+
+      span:nth-of-type(2) {
+        width: 100%;
+      }
+
+      span:nth-of-type(3) {
+        width: 75%;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+        transform-origin: bottom;
+        transform: rotatez(45deg) translate(8px, 0px);
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+        transform-origin: top;
+        transform: rotatez(-45deg);
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+        transform-origin: bottom;
+        width: 50%;
+        transform: translate(16px, -9px) rotatez(45deg);
+      }
+    }
+  }
+
+  .brandName {
+    h1 {
+      font-family: "Tinos", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+    }
+  }
+
+  .searchBar {
+    background-color: #292d32;
+    display: flex;
+    padding: 4px;
+    border-radius: 100px;
+    width: calc(100% - 200px);
+
+    div {
+      background-color: #fff;
+      border-radius: 100px;
+      display: flex;
+      padding: 4px 4px 4px 12px;
+      width: 100%;
+      justify-content: space-between;
+
+      input {
+        border: none;
+        padding: 8px;
+        border-radius: 100px;
+        color: #292d32;
+
+        &::placeholder {
+          color: rgba(41, 45, 50, 0.4);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      img {
+        background-color: #0ca49d;
+        height: calc(70px - 24px);
+        padding: 12px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    gap: 12px;
+    width: fit-content;
+
+    a {
+      background-color: #0ca49d;
+      width: 48px;
+      height: 48px;
+      border-radius: 100px;
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+    }
+
+    div:nth-of-type(2) {
+      background-color: #0ca49d;
+      padding: 16px 24px;
+      border-radius: 100px;
+      color: #fff;
+    }
+  }
+}
+
+.phoneNavbar {
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+  gap: 8px;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .humbergerIcon {
+    label {
+      display: flex;
+      flex-direction: column;
+      width: 35px;
+      cursor: pointer;
+
+      span {
+        background: #292d32;
+        border-radius: 10px;
+        height: 5px;
+        margin: 4px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      }
+
+      span:nth-of-type(1) {
+        width: 50%;
+      }
+
+      span:nth-of-type(2) {
+        width: 100%;
+      }
+
+      span:nth-of-type(3) {
+        width: 75%;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+        transform-origin: bottom;
+        transform: rotatez(45deg) translate(8px, 0px);
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+        transform-origin: top;
+        transform: rotatez(-45deg);
+      }
+
+      input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+        transform-origin: bottom;
+        width: 50%;
+        transform: translate(16px, -9px) rotatez(45deg);
+      }
+    }
+  }
+
+  .brandName {
+    h1 {
+      font-family: "Tinos", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+    }
+  }
+
+  .searchBar {
+    background-color: #292d32;
+    display: flex;
+    padding: 4px;
+
+    border-radius: 100px;
+    margin: 84px 1rem 16px 1rem;
+
+    div {
+      background-color: #fff;
+      border-radius: 100px;
+      display: flex;
+      padding: 4px 4px 4px 12px;
+      width: 100%;
+      justify-content: space-between;
+
+      input {
+        border: none;
+        padding: 8px;
+        border-radius: 100px;
+        color: #292d32;
+
+        &::placeholder {
+          color: rgba(41, 45, 50, 0.4);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      img {
+        background-color: #0ca49d;
+        height: calc(70px - 24px);
+        padding: 12px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    gap: 12px;
+    width: fit-content;
+
+    a {
+      background-color: #0ca49d;
+      width: 48px;
+      height: 48px;
+      border-radius: 100px;
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+    }
+
+    div:nth-of-type(2) {
+      background-color: #0ca49d;
+      padding: 16px 24px;
+      border-radius: 100px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburgerNavbar {
+    display: none;
+  }
+
+  .phoneNavbar {
+    display: flex;
+
+    .brandName {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .auth {
+      div:nth-of-type(2) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburgerNavbar {
+    display: none;
+  }
+
+  .phoneNavbar {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburgerNavbar {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .navbar {
+    padding: 8px 4vw;
+  }
+}
+
+@media (min-width: 1441px) {
+}

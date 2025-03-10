@@ -1,0 +1,51 @@
+.addAddress {
+  padding: 150px 10rem 80px 10rem;
+  font-family: "inter", sans-serif;
+  display: flex;
+  gap: 2rem;
+
+  .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .contactPerson,
+    .addressDetails {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .addressDetails {
+      margin-top: 2rem;
+    }
+
+    button {
+      margin-top: 24px;
+      place-self: flex-end;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background-color: #292d32;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1e2023;
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.myProductDetail {
+  padding: 150px 10rem 80px 10rem;
+  font-family: "inter", sans-serif;
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    gap: 16px;
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      .productName,
+      .description,
+      .brand {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+        input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #292d32;
+          border-radius: 4px;
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+
+        textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #292d32;
+          border-radius: 4px;
+          font-size: 16px;
+          height: 120px;
+          resize: none;
+        }
+      }
+
+      .category {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        select {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #292d32;
+          border-radius: 4px;
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .productImages {
+        display: flex;
+        flex-direction: column;
+
+        .container {
+          display: flex;
+          .image {
+            width: calc(100% / 3);
+            height: 200px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .size,
+      .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        label {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+        input {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #292d32;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+      }
+
+      .price {
+        div {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          height: fit-content;
+
+          span {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+
+        input {
+          -moz-appearance: textfield;
+          appearance: textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .request {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .save {
+    display: block;
+    background-color: #292d32;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 16px;
+    width: fit-content;
+  }
+}
+
+.InputImageFull {
+  border: #292d32 1px dashed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  padding: 8px;
+
+  span {
+    font-size: 12px;
+    text-align: center;
+    span {
+      color: #0ca49d;
+    }
+  }
+
+  img {
+    margin-bottom: 8px;
+    height: 40px;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.InputImageHalf {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .inputan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #292d32 1px dashed;
+    height: calc(50% - 4px);
+
+    span {
+      font-size: 12px;
+      text-align: center;
+
+      span {
+        color: #0ca49d;
+      }
+    }
+
+    img {
+      margin-bottom: 8px;
+      height: 30px;
+    }
+
+    input {
+      display: none;
+    }
+  }
+}
+
+.reqCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #0ca49d;
+  color: #fff;
+  width: calc(100% / 4 - 12px);
+  padding: 2rem;
+  border-radius: 8px;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .action {
+    display: flex;
+    gap: 8px;
+    button {
+      background-color: #fff;
+      color: #0ca49d;
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:last-child {
+        background-color: #292d32;
+        color: #fff;
+        margin-right: 8px;
+      }
+    }
+  }
+}

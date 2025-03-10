@@ -1,0 +1,205 @@
+.cart {
+  font-family: "inter", sans-serif;
+  padding: 150px 10rem 0 10rem;
+  margin-bottom: 80px;
+
+  .title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .cartContent {
+    display: flex;
+    gap: 1rem;
+
+    .products {
+      width: 70%;
+      .selector {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        border: #292d32 1px solid;
+        border-radius: 8px;
+        padding: 24px;
+        align-items: center;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        button {
+          background-color: #292d32;
+          height: fit-content;
+          color: #fff;
+          padding: 12px 24px;
+          border-radius: 30px;
+
+          &:hover {
+            background-color: #1d1f22;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      .product {
+        padding: 24px;
+        border: #292d32 1px solid;
+        border-radius: 8px;
+
+        .store {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding-bottom: 1rem;
+
+          img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            border-radius: 35px;
+            border: #292d32 1px solid;
+          }
+
+          h1 {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+
+        .items {
+          justify-content: space-between;
+          display: flex;
+          align-items: end;
+          gap: 0.5rem;
+
+          .container {
+            display: flex;
+            align-items: end;
+            gap: 1rem;
+
+            .img {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+
+              img {
+                height: 120px;
+                width: 120px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: #292d32 1px solid;
+              }
+            }
+
+            .productInfo {
+              height: 100%;
+
+              h1 {
+                font-size: 32px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+              }
+
+              div {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                p {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: rgba(41, 45, 50, 0.7);
+
+                  span {
+                    font-weight: 500;
+                    color: #292d32;
+                  }
+                }
+              }
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.5rem;
+
+            span:nth-of-type(1) {
+              text-decoration: line-through;
+              color: rgba(41, 45, 50, 0.7);
+              font-size: 14px;
+            }
+
+            .price {
+              font-size: 24px;
+              font-weight: 500;
+            }
+
+            .bottom {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+
+              .quantity {
+                background-color: #292d32;
+                padding: 8px 12px;
+                display: flex;
+                gap: 1rem;
+                border-radius: 8px;
+
+                span {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .action {
+      width: 30%;
+      border: #292d32 1px solid;
+      border-radius: 8px;
+      padding: 24px;
+      height: fit-content;
+
+      h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: rgba(41, 45, 50, 0.7);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        span:nth-of-type(2) {
+          font-weight: 500;
+          color: #292d32;
+        }
+      }
+
+      button {
+        display: flex;
+        border: none;
+        color: #fff;
+        padding: 12px;
+        justify-content: center;
+        background-color: #292d32;
+        width: 100%;
+        border-radius: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+}
