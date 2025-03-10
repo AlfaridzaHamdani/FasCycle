@@ -39,6 +39,7 @@ function App() {
         <Route path="/myproduct/detail" element={<MyProductDetail />} />
         <Route path="/trade" element={<Trade />} />
       </Routes>
+      {/* kajdklad */}
     </Router>
   );
 }
