@@ -28,3 +28,70 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 0 0 0 0;
+
+    .container {
+      height: 100vh;
+
+      h1 {
+        max-width: 300px;
+      }
+
+      img {
+        height: 200px;
+        right: 30%;
+        bottom: 28%;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .heroSection {
+    padding: 0 0 0 0;
+
+    .container {
+      height: 70vh;
+
+      img {
+        height: 250px;
+        bottom: 40%;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heroSection {
+    .container {
+      height: 70vh;
+
+      h1 {
+        max-width: 500px;
+      }
+
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .heroSection {
+    .container {
+      height: 70vh;
+
+      h1 {
+        max-width: 500px;
+      }
+
+      img {
+        height: 250px;
+      }
+    }
+  }
+}

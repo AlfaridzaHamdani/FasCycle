@@ -29,3 +29,62 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .solutionSection {
+    .text {
+      flex-direction: column;
+      align-items: start;
+
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .solutionSection {
+    .text {
+      flex-direction: column;
+      align-items: start;
+
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .solutionSection {
+    .text {
+      flex-direction: column;
+      align-items: start;
+
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .solutionSection {
+    .text {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: end;
+      gap: 2rem;
+
+      h1 {
+        font-size: 6rem;
+        line-height: 90px;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

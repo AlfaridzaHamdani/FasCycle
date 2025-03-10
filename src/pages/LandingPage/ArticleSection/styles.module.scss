@@ -14,3 +14,47 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .articleSection {
+    padding: 2rem 0;
+    .container {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .articleSection {
+    padding: 2rem 0;
+    .container {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .articleSection {
+    padding: 2rem 0;
+    .container {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .articleSection {
+    padding: 2rem 0;
+    .container {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}

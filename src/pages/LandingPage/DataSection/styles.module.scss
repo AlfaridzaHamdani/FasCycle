@@ -18,7 +18,7 @@
 
   .text {
     color: #fff;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1rem;
 
     h1 {
       font-size: 10rem;
@@ -30,6 +30,40 @@
       font-size: 1.5rem;
       font-weight: 400;
       max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .dataSection {
+    height: 600px;
+    padding: 0 0 2rem 0;
+    img {
+      height: 400px;
+      bottom: 65%;
+    }
+
+    .text {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .dataSection {
+    height: 600px;
+    padding: 0 0 2rem 0;
+    img {
+      height: 400px;
+      bottom: 65%;
+    }
+
+    .text {
+      h1 {
+        font-size: 6rem;
+      }
     }
   }
 }
